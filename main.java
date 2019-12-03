@@ -33,7 +33,7 @@ public class Main {
 
 	/* PRINT FUNCTION */
 	public static void printinstructionList(){
-		System.out.println("** DECODED INSTRUCTIONS **");
+		System.out.println("** DECODED INSTRUCTION LIST **");
 		for(ArrayList line : instructionList)
 		  { 		      
 	           System.out.println(line); 		
@@ -53,12 +53,14 @@ public class Main {
 			try {
 				/* IF STAGE */
 				String binaryString = scan.nextLine();
-				System.out.println(binaryString); 
+
 				/* DECODE STAGE) */
 				BinarytoMipsDC(binaryString);
-				/* EXECUTE STAGE */
 
-				//
+
+				/* EXECUTE STAGE */
+				DoTheWork();
+			
 				
 			} catch(Exception e) {
 				System.out.println("its broken");
@@ -71,39 +73,63 @@ public class Main {
 	* DECODE STAGE
 	****************************************************************************/
 	public static void BinarytoMipsDC(String binaryString) {
-		// declaring our list that will hold our 32 bit decoded instruction
+		System.out.println("binary String:" + binaryString);
+		//list that will hold our 32 bit decoded instruction
 		ArrayList<String> decodedMips = new ArrayList<>();
-		
+		//setup some sort of line structure here
 
-		//begin converting here
-		System.out.println(binaryString);
-		
 
-		//adding our decoded instruction to the list
+
+		/* DECODING BINARY STRING HERE */ 
+		String type = binaryString.substring(0,2);
+		System.out.println("Instruction type: " + type);
+
+		String register1 = binaryString.substring(2,8);
+		System.out.println("Register1: " + register1);
+
+		String register2 = binaryString.substring(8,14);
+		System.out.println("Register2: " + register2);
+
+		String register3 = binaryString.substring(14,20);
+		System.out.println("Register3: " + register3);
+		
+		String register4 = binaryString.substring(20,26);
+		System.out.println("Register4: " + register4);
+		
+		String register5 = binaryString.substring(26,32);
+		System.out.println("Register5: " + register5);
+
+
+
+
+
+
+
+
+		/* PRINTING AND STORING DECODED STRING */
+		System.out.println("Decoded String:");
+		for(String line : decodedMips) { 		      
+	           System.out.println(line); 		
+	      }
+	    System.out.println("\n");
+
 		instructionList.add(decodedMips);
-
 	}
 
 	/****************************************************************************
-	* DoTheWork() takes the converted list of lists and schedules
+	* DoTheWork() is the simulation - it reads from the decoded list 
 	* EXECUTE STAGE
 	* MEMORY STAGE ??
 	****************************************************************************/
 	public static void DoTheWork() {
 
 	}
-	/****************************************************************************
-	* prints out our final formatted answer
-	****************************************************************************/
 
 	/****************************************************************************
-	* The main() runs our methods + formats
+	* The main() runs our methods
 	****************************************************************************/
 	public static void main(String[] args){
 		readBinaryIF();
-		DoTheWork(); 
 		printinstructionList();
-
-
 	}
 }
