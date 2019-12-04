@@ -1,0 +1,614 @@
+
+CREATETYPE26               0     9                  3
+PARSECODE      001000 00000 01001 00000 00000 000011 Y  addi     26       001000   rs       rt       immediate
+
+CREATETYPE26               0    10                  7
+PARSECODE      001000 00000 01010 00000 00000 000111 Y  addi     26       001000   rs       rt       immediate
+
+CREATETYPE02               0    10    11     4      0
+PARSECODE ZERO 000000 00000 01010 01011 00100 000000 Y  sll      02       000000   00000    rt       rd       sa       000000  
+
+CREATETYPE01              11     9    11     0     32
+PARSECODE ZERO 000000 01011 01001 01011 00000 100000 Y  add      01       000000   rs       rt       rd       00000    100000  
+
+CREATETYPE01              11     0     4     0     32
+PARSECODE ZERO 000000 01011 00000 00100 00000 100000 Y  add      01       000000   rs       rt       rd       00000    100000  
+
+CREATETYPE26               0     2                  1
+PARSECODE      001001 00000 00010 00000 00000 000001 Y  addiu    26       001001   rs       rt       immediate
+
+CREATETYPE09               0     0     0     0     12
+PARSECODE ZERO 000000 00000 00000 00000 00000 001100 Y  syscall  09       000000   code     001100  
+
+CREATETYPE20               0     1               4097
+PARSECODE      001111 00000 00001 00010 00000 000001 Y  lui      20       001111   00000    rt       immediate
+
+CREATETYPE26               1     4                  0
+PARSECODE      001101 00001 00100 00000 00000 000000 Y  ori      26       001101   rs       rt       immediate
+
+CREATETYPE26               0     2                  4
+PARSECODE      001001 00000 00010 00000 00000 000100 Y  addiu    26       001001   rs       rt       immediate
+
+CREATETYPE09               0     0     0     0     12
+PARSECODE ZERO 000000 00000 00000 00000 00000 001100 Y  syscall  09       000000   code     001100  
+
+CREATETYPE01               0    11     2     0     32
+PARSECODE ZERO 000000 00000 01011 00010 00000 100000 Y  add      01       000000   rs       rt       rd       00000    100000  
+TOP LOOP CLOCK AND PC 0 0
+
+FETCHED FROM 0 AT 0
+FETCH              clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+
+INEXEC             clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+
+
+CHECK FOR WRITE    clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+ZORK WRITE NO  clk=0
+
+MEMORY UPDATE PC to 4
+
+CHECK FOR MEMORY   clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO MEM THIS INST   clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+ZORK MEMORY NO  clk=0
+
+
+CHECK FOR EXECUTE  clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO EXECUTE         clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+ZORK EXECUTE NO  clk=0
+
+
+CHECK FOR DECODE   clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO DECODE          clk=0 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+ZORK DECODE NO  clk=0
+
+PROC clk=0 pc=4 npc=4 tempa=0 tempb=0 immediate=0 aluoutput=0 lmd=0 cond=False fetch=1 decode=0 read=0 execute=0 memory=0 write=0
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:-0000909 10:-0000910 11:-0000911 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 1 4
+INEXEC             clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 1 4
+
+FETCHED FROM 4 AT 1
+FETCH              clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+
+INEXEC             clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+
+
+CHECK FOR WRITE    clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR WRITE    clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+ZORK WRITE NO  clk=1
+
+MEMORY UPDATE PC to 8
+
+CHECK FOR MEMORY   clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO MEM THIS INST   clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO MEM THIS INST   clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+ZORK MEMORY NO  clk=1
+
+
+CHECK FOR EXECUTE  clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO EXECUTE         clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR EXECUTE  clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO EXECUTE         clk=1 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+ZORK EXECUTE NO  clk=1
+
+
+CHECK FOR DECODE   clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+DECODE             clk=1 sub=00 X  DD=-1 IF=00 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+ZORK DECODE VALUES rs=00000=0 rt=01001=9 imm=0000000000000011:3
+ZORK DECODE YES    clk=1 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+ZORK DECODE RS= 0=0 RT= 9=-909 IMM=3
+
+PROC clk=1 pc=8 npc=8 tempa=0 tempb=-909 immediate=3 aluoutput=0 lmd=0 cond=False fetch=2 decode=2 read=0 execute=0 memory=0 write=0
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:-0000909 10:-0000910 11:-0000911 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 2 8
+INEXEC             clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 2 8
+
+FETCHED FROM 8 AT 2
+FETCH              clk=2 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+
+INEXEC             clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=2 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+
+
+CHECK FOR WRITE    clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR WRITE    clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR WRITE    clk=2 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+NO WRITE           clk=2 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+ZORK WRITE NO  clk=2
+
+MEMORY UPDATE PC to 12
+
+CHECK FOR MEMORY   clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO MEM THIS INST   clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO MEM THIS INST   clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=2 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+NO MEM THIS INST   clk=2 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+ZORK MEMORY NO  clk=2
+
+
+CHECK FOR EXECUTE  clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+EXECUTE            clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+EXECUTE SET        clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=00 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+EXECUTE ADDI, ALUOUTPUT=3
+
+
+CHECK FOR DECODE   clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+DECODE DONE        clk=2 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR DECODE   clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+DECODE             clk=2 sub=01 X  DD=-1 IF=01 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+ZORK DECODE VALUES rs=00000=0 rt=01010=10 imm=0000000000000111:7
+ZORK DECODE YES    clk=2 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+ZORK DECODE RS= 0=0 RT=10=-910 IMM=7
+
+PROC clk=2 pc=12 npc=12 tempa=0 tempb=-910 immediate=7 aluoutput=3 lmd=0 cond=False fetch=3 decode=3 read=0 execute=3 memory=0 write=0
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:-0000909 10:-0000910 11:-0000911 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 3 12
+INEXEC             clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 3 12
+
+FETCHED FROM 12 AT 3
+FETCH              clk=3 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+
+INEXEC             clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=3 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+
+
+CHECK FOR WRITE    clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR WRITE    clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR WRITE    clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+NO WRITE           clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR WRITE    clk=3 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=3 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK WRITE NO  clk=3
+
+MEMORY UPDATE PC to 16
+
+CHECK FOR MEMORY   clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+MEMORY DONE        clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO MEM THIS INST   clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+NO MEM THIS INST   clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR MEMORY   clk=3 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO MEM THIS INST   clk=3 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK MEMORY NO  clk=3
+
+
+CHECK FOR EXECUTE  clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+EXECUTE DONE       clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR EXECUTE  clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+EXECUTE            clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=00 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+EXECUTE SET        clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=00 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+EXECUTE ADDI, ALUOUTPUT=7
+
+
+CHECK FOR DECODE   clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+DECODE DONE        clk=3 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR DECODE   clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+DECODE DONE        clk=3 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR DECODE   clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+DECODE             clk=3 sub=02 X  DD=-1 IF=02 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+ZORK DECODE VALUES rs=00000=0 rt=01010=10 imm=0101100100000000:22784
+ZORK DECODE YES    clk=3 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+ZORK DECODE RS= 0=0 RT=10=-910 IMM=22784
+
+PROC clk=3 pc=16 npc=16 tempa=0 tempb=-910 immediate=22784 aluoutput=7 lmd=0 cond=False fetch=4 decode=4 read=0 execute=4 memory=0 write=0
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:-0000909 10:-0000910 11:-0000911 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 4 16
+INEXEC             clk=4 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 4 16
+
+FETCHED FROM 16 AT 4
+FETCH              clk=4 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+
+INEXEC             clk=4 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=4 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+
+
+CHECK FOR WRITE    clk=4 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+WRITE              clk=4 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=00 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+WRITE SET          clk=4 sub=00 X  DD=-1 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+ZORK WRITE RI=7
+CHECK FOR WRITE    clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+NO WRITE           clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR WRITE    clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+NO WRITE           clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR WRITE    clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR WRITE    clk=4 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=4 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+
+MEMORY UPDATE PC to 20
+
+CHECK FOR MEMORY   clk=4 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+MEMORY DONE        clk=4 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+MEMORY DONE        clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+NO MEM THIS INST   clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR MEMORY   clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO MEM THIS INST   clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=4 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO MEM THIS INST   clk=4 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK MEMORY NO  clk=4
+
+
+CHECK FOR EXECUTE  clk=4 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+EXECUTE DONE       clk=4 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR EXECUTE  clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+EXECUTE DONE       clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR EXECUTE  clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+EXECUTE            clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+EXECUTE SET        clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=00 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+EXECUTE SLL, ALUOUTPUT=-1863680
+
+
+CHECK FOR DECODE   clk=4 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+DECODE DONE        clk=4 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR DECODE   clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+DECODE DONE        clk=4 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR DECODE   clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+DECODE DONE        clk=4 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR DECODE   clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+DECODE             clk=4 sub=03 X  DD=-1 IF=03 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK DECODE VALUES rs=01011=11 rt=01001=9 imm=0101100000100000:22560
+ZORK DECODE YES    clk=4 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK DECODE RS=11=-911 RT= 9=7 IMM=22560
+
+PROC clk=4 pc=20 npc=20 tempa=-911 tempb=7 immediate=22560 aluoutput=-1863680 lmd=0 cond=False fetch=5 decode=5 read=0 execute=5 memory=0 write=5
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:00000007 10:-0000910 11:-0000911 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 5 20
+INEXEC             clk=5 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=5 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 5 20
+
+FETCHED FROM 20 AT 5
+FETCH              clk=5 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+
+FLUSH DONE         clk=5 sub=00 X  DD=04 IF=00 ID=01 RR=00 EX=02 ME=03 WR=04 Y 001000 00000 01001 00000 00000 000011 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=5 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=5 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+
+
+CHECK FOR WRITE    clk=5 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+WRITE              clk=5 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=00 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+WRITE SET          clk=5 sub=01 X  DD=-1 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+ZORK WRITE RI=-1863680
+CHECK FOR WRITE    clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+NO WRITE           clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR WRITE    clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR WRITE    clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR WRITE    clk=5 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+NO WRITE           clk=5 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+
+MEMORY UPDATE PC to 24
+
+CHECK FOR MEMORY   clk=5 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+MEMORY DONE        clk=5 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR MEMORY   clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+MEMORY DONE        clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR MEMORY   clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO MEM THIS INST   clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO MEM THIS INST   clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=5 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+NO MEM THIS INST   clk=5 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+ZORK MEMORY NO  clk=5
+
+
+CHECK FOR EXECUTE  clk=5 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+EXECUTE DONE       clk=5 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR EXECUTE  clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+EXECUTE DONE       clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR EXECUTE  clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE            clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE SET        clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=00 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE ADD, ALUOUTPUT=-904
+
+
+CHECK FOR DECODE   clk=5 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+DECODE DONE        clk=5 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+CHECK FOR DECODE   clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+DECODE DONE        clk=5 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR DECODE   clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+DECODE DONE        clk=5 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR DECODE   clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+DECODE             clk=5 sub=04 X  DD=-1 IF=04 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK DECODE VALUES rs=01011=11 rt=00000=0 imm=0010000000100000:8224
+ZORK DECODE YES    clk=5 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK DECODE RS=11=-911 RT= 0=0 IMM=8224
+
+PROC clk=5 pc=24 npc=24 tempa=-911 tempb=0 immediate=8224 aluoutput=-904 lmd=0 cond=False fetch=6 decode=6 read=0 execute=6 memory=0 write=6
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:00000007 10:-1863680 11:-0000911 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 6 24
+INEXEC             clk=6 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=6 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 6 24
+
+FETCHED FROM 24 AT 6
+FETCH              clk=6 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+
+FLUSH DONE         clk=6 sub=01 X  DD=05 IF=01 ID=02 RR=00 EX=03 ME=04 WR=05 Y 001000 00000 01010 00000 00000 000111 Z  addi     26       001000   rs       rt       immediate
+INEXEC             clk=6 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+INEXEC             clk=6 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+
+
+CHECK FOR WRITE    clk=6 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+WRITE              clk=6 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=00 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+WRITE SET          clk=6 sub=02 X  DD=-1 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+ZORK WRITE RR=-904
+CHECK FOR WRITE    clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR WRITE    clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR WRITE    clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+NO WRITE           clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR WRITE    clk=6 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+NO WRITE           clk=6 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+
+MEMORY UPDATE PC to 28
+
+CHECK FOR MEMORY   clk=6 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+MEMORY DONE        clk=6 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR MEMORY   clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+MEMORY DONE        clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO MEM THIS INST   clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+NO MEM THIS INST   clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR MEMORY   clk=6 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+NO MEM THIS INST   clk=6 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+ZORK MEMORY NO  clk=6
+
+
+CHECK FOR EXECUTE  clk=6 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+EXECUTE DONE       clk=6 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR EXECUTE  clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE DONE       clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR EXECUTE  clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE            clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=00 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE SET        clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=00 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE ADD, ALUOUTPUT=-911
+
+
+CHECK FOR DECODE   clk=6 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+DECODE DONE        clk=6 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+CHECK FOR DECODE   clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+DECODE DONE        clk=6 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR DECODE   clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+DECODE DONE        clk=6 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR DECODE   clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+DECODE             clk=6 sub=05 X  DD=-1 IF=05 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+ZORK DECODE VALUES rs=00000=0 rt=00010=2 imm=0000000000000001:1
+ZORK DECODE YES    clk=6 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+ZORK DECODE RS= 0=0 RT= 2=-902 IMM=1
+
+PROC clk=6 pc=28 npc=28 tempa=0 tempb=-902 immediate=1 aluoutput=-911 lmd=0 cond=False fetch=7 decode=7 read=0 execute=7 memory=0 write=7
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:00000007 10:-1863680 11:-0000904 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 7 28
+INEXEC             clk=7 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=7 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+INEXEC             clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 7 28
+
+FETCHED FROM 28 AT 7
+FETCH              clk=7 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+
+FLUSH DONE         clk=7 sub=02 X  DD=06 IF=02 ID=03 RR=00 EX=04 ME=05 WR=06 Y 000000 00000 01010 01011 00100 000000 Z  sll      02       000000   00000    rt       rd       sa       000000  
+INEXEC             clk=7 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+INEXEC             clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+INEXEC             clk=7 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+
+
+CHECK FOR WRITE    clk=7 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+WRITE              clk=7 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=00 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+WRITE SET          clk=7 sub=03 X  DD=-1 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK WRITE RR=-911
+CHECK FOR WRITE    clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+NO WRITE           clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR WRITE    clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+NO WRITE           clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR WRITE    clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+NO WRITE           clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+CHECK FOR WRITE    clk=7 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+NO WRITE           clk=7 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+
+MEMORY UPDATE PC to 32
+
+CHECK FOR MEMORY   clk=7 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+MEMORY DONE        clk=7 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+MEMORY DONE        clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+NO MEM THIS INST   clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR MEMORY   clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+NO MEM THIS INST   clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+CHECK FOR MEMORY   clk=7 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+NO MEM THIS INST   clk=7 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+ZORK MEMORY NO  clk=7
+
+
+CHECK FOR EXECUTE  clk=7 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE DONE       clk=7 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR EXECUTE  clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE DONE       clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR EXECUTE  clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+EXECUTE            clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=00 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+EXECUTE SET        clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=00 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+EXECUTE ADDIU, ALUOUTPUT=1
+
+
+CHECK FOR DECODE   clk=7 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+DECODE DONE        clk=7 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR DECODE   clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+DECODE DONE        clk=7 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR DECODE   clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+DECODE DONE        clk=7 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR DECODE   clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+DECODE             clk=7 sub=06 X  DD=-1 IF=06 ID=00 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+ZORK DECODE VALUES rs=00000=0 rt=00000=0 imm=0000000000001100:12
+ZORK DECODE YES    clk=7 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+ZORK DECODE RS= 0=0 RT= 0=0 IMM=12
+
+PROC clk=7 pc=32 npc=32 tempa=0 tempb=0 immediate=12 aluoutput=1 lmd=0 cond=False fetch=8 decode=8 read=0 execute=8 memory=0 write=8
+PROC   0:00000000  1:-0000901  2:-0000902  3:-0000903  4:-0000904  5:-0000905  6:-0000906  7:-0000907
+PROCREG   8:-0000908  9:00000007 10:-1863680 11:-0000911 12:-0000912 13:-0000913 14:-0000914 15:-0000915
+PROCREG  16:-0000916 17:-0000917 18:-0000918 19:-0000919 20:-0000920 21:-0000921 22:-0000922 23:-0000923
+PROCREG  24:-0000924 25:-0000925 26:-0000926 27:-0000927 28:-0000928 29:-0000929 30:-0000930 31:-0000931
+PROCREG 
+
+BOTTOM LOOP CLOCK AND PC 8 32
+INEXEC             clk=8 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=8 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+INEXEC             clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+INEXEC             clk=8 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+
+********** ********** ********** ********** ********** ********** ********** **********
+
+TOP LOOP CLOCK AND PC 8 32
+
+FETCHED FROM 32 AT 8
+FETCH              clk=8 sub=08 X  DD=-1 IF=08 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001101 00001 00100 00000 00000 000000 Z  ori      26       001101   rs       rt       immediate
+
+FLUSH DONE         clk=8 sub=03 X  DD=07 IF=03 ID=04 RR=00 EX=05 ME=06 WR=07 Y 000000 01011 01001 01011 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=8 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+INEXEC             clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+INEXEC             clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+INEXEC             clk=8 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+INEXEC             clk=8 sub=08 X  DD=-1 IF=08 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001101 00001 00100 00000 00000 000000 Z  ori      26       001101   rs       rt       immediate
+
+
+CHECK FOR WRITE    clk=8 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+WRITE              clk=8 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=00 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+WRITE SET          clk=8 sub=04 X  DD=-1 IF=04 ID=05 RR=00 EX=06 ME=07 WR=08 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+ZORK WRITE RR=1
+CHECK FOR WRITE    clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+NO WRITE           clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR WRITE    clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+NO WRITE           clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+CHECK FOR WRITE    clk=8 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+NO WRITE           clk=8 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+CHECK FOR WRITE    clk=8 sub=08 X  DD=-1 IF=08 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001101 00001 00100 00000 00000 000000 Z  ori      26       001101   rs       rt       immediate
+NO WRITE           clk=8 sub=08 X  DD=-1 IF=08 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001101 00001 00100 00000 00000 000000 Z  ori      26       001101   rs       rt       immediate
+
+MEMORY UPDATE PC to 36
+
+CHECK FOR MEMORY   clk=8 sub=04 X  DD=08 IF=04 ID=05 RR=00 EX=06 ME=07 WR=08 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+MEMORY DONE        clk=8 sub=04 X  DD=08 IF=04 ID=05 RR=00 EX=06 ME=07 WR=08 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR MEMORY   clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+MEMORY DONE        clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR MEMORY   clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+NO MEM THIS INST   clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+CHECK FOR MEMORY   clk=8 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+NO MEM THIS INST   clk=8 sub=07 X  DD=-1 IF=07 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001111 00000 00001 00010 00000 000001 Z  lui      20       001111   00000    rt       immediate
+CHECK FOR MEMORY   clk=8 sub=08 X  DD=-1 IF=08 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001101 00001 00100 00000 00000 000000 Z  ori      26       001101   rs       rt       immediate
+NO MEM THIS INST   clk=8 sub=08 X  DD=-1 IF=08 ID=00 RR=00 EX=00 ME=00 WR=00 Y 001101 00001 00100 00000 00000 000000 Z  ori      26       001101   rs       rt       immediate
+ZORK MEMORY NO  clk=8
+
+
+CHECK FOR EXECUTE  clk=8 sub=04 X  DD=08 IF=04 ID=05 RR=00 EX=06 ME=07 WR=08 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+EXECUTE DONE       clk=8 sub=04 X  DD=08 IF=04 ID=05 RR=00 EX=06 ME=07 WR=08 Y 000000 01011 00000 00100 00000 100000 Z  add      01       000000   rs       rt       rd       00000    100000  
+CHECK FOR EXECUTE  clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+EXECUTE DONE       clk=8 sub=05 X  DD=-1 IF=05 ID=06 RR=00 EX=07 ME=08 WR=00 Y 001001 00000 00010 00000 00000 000001 Z  addiu    26       001001   rs       rt       immediate
+CHECK FOR EXECUTE  clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+EXECUTE            clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=00 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+EXECUTE SET        clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=08 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
+EXECUTE MISSING    clk=8 sub=06 X  DD=-1 IF=06 ID=07 RR=00 EX=08 ME=00 WR=00 Y 000000 00000 00000 00000 00000 001100 Z  syscall  09       000000   code     001100  
